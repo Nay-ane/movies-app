@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CubosFlix</title>
     <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./css/spacing.css">
     <script src="script.js" defer></script>
   </head>
 
-  <body>
-    <header class="header">
+  <body class="body">
+    <header class="header flex-row justify-between mgbt-4">
       <img src="./assets/logo.svg" alt="Logo">
       <h1 class="header__title">Cubos Flix</h1>
       <img class="btn-theme" src="./assets/light-mode.svg" alt="Botão de tema">
     </header>
-    <div class="container">
-      <input class="input" type="text" placeholder="Pesquisar...">
-      <div class="movies-container">
+    <div class="container flex-column">
+      <input class="input mgbt-4" type="text" placeholder="Pesquisar...">
+      <div class="movies-container mgbt-4">
         <img class="btn-prev" src="./assets/seta-esquerda-preta.svg" alt="Seta esquerda">
-        <div class="movies">
-          <div class="movie">
-            <div class="movie__info">
+        <div class="movies flex-row flex-wrap justify-center">
+          <div class="movie flex-column justify-end">
+            <div class="movie__info flex-row justify-between">
               <span class="movie__title"></span>
               <span class="movie__rating">
                 <img src="./assets/estrela.svg" alt="Estrela">
