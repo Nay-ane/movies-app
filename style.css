@@ -172,7 +172,7 @@
 
 }
 
-.modal__button{
+.modal__close {
     all: unset;
     box-sizing: border-box;
     cursor: pointer;
