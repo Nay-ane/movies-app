@@ -22,9 +22,14 @@
     border-radius: 8px;
 }
 
+.movies-container{
+    gap: 25px;
+
+}
+
 .movies {
     gap: 20px
-    
+
 }
 
 .movie {
@@ -79,13 +84,19 @@
     width: 550px;
     height: 310px;
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+}
 
+.highlight__video-button {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .highlight__info {
@@ -147,3 +158,25 @@
     font-size: 16px;
     color: #000000;
 }   
+
+.modal {
+    background-color: rgba(0,0,0, 0.6);
+
+    position: fixed;
+    z-index: 4;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.modal__button{
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+}

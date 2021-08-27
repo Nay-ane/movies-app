@@ -20,9 +20,9 @@
     </header>
     <div class="container flex-column align-center">
       <input class="input mgbt-4" type="text" placeholder="Pesquisar...">
-      <div class="movies-container mgbt-4">
+      <div class="movies-container flex-row  mgbt-4">
         <img class="btn-prev" src="./assets/seta-esquerda-preta.svg" alt="Seta esquerda">
-       <div class="movies flex-row flex-wrap justify-center">
+       <div class="movies flex-row justify-center">
           <!--<div class="movie flex-column justify-end">
             <div class="movie__info flex-row justify-between">
               <span class="movie__title"></span>
@@ -38,7 +38,7 @@
       <div class="highlight flex-row ">
         <a class="highlight__video-link" href="#" target="_blank">
           <div class="highlight__video flex-column align-center justify-center">
-            <img src="./assets/play.svg" alt="Play">
+            <button class="highlight__video-button"><img src="./assets/play.svg" alt="Play"></button>
           </div>
         </a>
         <div class="highlight__info">
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div class="modal hidden">
+    <div class="modal flex-row align-center justify-content hidden">
       <img src="./assets/close.svg" alt="Close" class="modal__close">
       <h3 class="modal__title"></h3>
       <img class="modal__img">
