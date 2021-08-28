@@ -8,10 +8,19 @@ let inicioCarrossel = 0;
 function init() {
     const arrowLeft = document.querySelector(".btn-prev");
     const arrowRight = document.querySelector(".btn-next");
+    const input = document.querySelector(".input")
 
     requestApi(linkApi);
     arrowRight.addEventListener("click", nextPage);
     arrowLeft.addEventListener("click", prevPage);
+    input.addEventListener("keydown", e => {
+        let key = e.which || e.keyCode
+        if(key == "13") {   
+            searchMovie(input.value)    
+            input.value = ''
+        }
+        
+    })
 }
 
 async function requestApi(link) {
@@ -23,6 +32,7 @@ async function requestApi(link) {
 }
 
 function fillMovieList(movieList) {
+    moviesDiv.textContent = ""
     movieList.forEach((movie) => {
         const movieRatingDiv = document.createElement("div");
         const movieDiv = createMovieDiv(movie);
@@ -110,5 +120,20 @@ function createMovieDiv(movie) {
     movieDiv.style.backgroundImage = `url('${movie.poster_path}')`;
     return movieDiv;
 }
+
+async function searchMovie(inputValue) {
+    if(!inputValue) {
+        requestApi(linkApi)
+        loadCarossel()
+        return
+    }
+
+    const promise = await fetch(`https://tmdb-proxy.cubos-academy.workers.dev/3/search/movie?language=pt-BR&include_adult=false&query=${inputValue}`)
+    const body = await promise.json()
+    const movieList = body.results
+    fillMovieList(movieList)
+    loadCarossel()
+}
+
 
 init();

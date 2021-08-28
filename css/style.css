@@ -169,7 +169,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 80px;
 
 }
 
@@ -177,7 +176,7 @@
     width: 357px;
     height: 54px;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-top: 40px;
     color: #FFF;
     text-align: center;
 }
@@ -187,7 +186,7 @@
     height: 413px;
     left: 355px;
     top: 184px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -199,8 +198,16 @@
 }
 
 .modal__average {
+    width: 47px;
+    height: 48px;
+
     font-size: 20px;
-    color: #FFFF
+    color: #FFFF;
+    text-align: center;
+
+    background-color: #A785ED;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .modal__close {

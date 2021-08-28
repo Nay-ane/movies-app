@@ -1,4 +1,3 @@
-
 function init() {
     fetchMovieHighlight();
 }
@@ -13,8 +12,8 @@ async function fetchMovieHighlight() {
     setTitle(movie)
     setRating(movie)
     setReleaseDate(movie)
-    setOverview(movie)
     setGenres(movie)
+    setOverview(movie)
     addOnClickListener(movie)
 }
 
@@ -35,8 +34,13 @@ function setOverview(movie) {
 }
 
 function setReleaseDate(movie) {
+    const month = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul","Ago","Set","Out","Nov","Dez"]
     const highlightLaunch = document.querySelector(".highlight__launch");
-    highlightLaunch.textContent = movie.release_date;
+    const data = new Date(movie.release_date);
+    console.log(data)
+    let formatedDate = ((data.getDate() + "-" + month[(data.getMonth())] + "-" + data.getFullYear()))
+    console.log(formatedDate)
+    highlightLaunch.textContent = formatedDate
 }
 
 function setRating(movie) {

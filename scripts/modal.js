@@ -26,14 +26,8 @@ function fillModalInfo(movie) {
 
 function setModalAvarage(movie) {
     const modalAvarage = document.querySelector(".modal__average");
-    modalAvarage.textContent = movie.vote_average;
+    modalAvarage.textContent = Number(movie.vote_average).toFixed(1);
 }
-
-/*function setModalGenres(movie) {
-    const modalGenres = document.querySelector(".modal__genres");
-    modalGenres.textContent = movie.genres.map((genre) => " " + genre.name);
-}*/
-
 
 function setModalOverview(movie) {
     const modalDescription = document.querySelector(".modal__description");
