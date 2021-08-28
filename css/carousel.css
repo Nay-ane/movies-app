@@ -1,0 +1,72 @@
+.body {
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #A785ED;
+    color: #FDFDFD;
+    padding: 20px;
+}
+
+.input {
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #979797;
+    border-radius: 8px;
+}
+
+.movies-container{
+    gap: 25px;
+
+}
+
+.movies {
+    gap: 20px
+
+}
+
+.movie {
+    width: 168px;
+    height: 301px;
+    left: 0px;
+    top: 0px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.movie__info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 168px;
+    height: 40px;
+    color: #FFFFFF;
+    padding: 8px;
+    gap: 15px;
+}
+
+.movie__title {
+    max-width: 100px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.movie__rating__img {
+    margin-right: 5px;
+}
+
+.movie__rating{
+    font-size: 12px;
+    line-height: 18px;
+    color: #FBCD6E;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 28px;
+}
+
+
+
+

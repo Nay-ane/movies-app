@@ -7,7 +7,9 @@
   <title>CubosFlix</title>
   <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
   <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+  <link rel="stylesheet" href="./css/highlight.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <link rel="stylesheet" href="./css/spacing.css">
   <script src="scripts/carrossel.js" defer></script>
   <script src="scripts/highlights.js" defer></script>
@@ -59,13 +61,14 @@
   </div>
   <div class="modal flex-column justify-center align-center hidden">
     <img src="./assets/close.svg" alt="Close" class="modal__close">
-    <h3 class="modal__title mgbt-4"></h3>
+    <h3 class="modal__title"></h3>
     <img class="modal__img">
     <p class="modal__description">
     </p>
-    <div class="modal__genre-average">
-      <div class="modal__genres"></div>
-      <div class="modal__average"></div>
+    <div class="modal__average flex-row"></div>
+    
+    <div class="modal__genre-average flex-row justify-between">
+      <div class="modal__genres flex-row"></div>
     </div>
   </div>
 </body>

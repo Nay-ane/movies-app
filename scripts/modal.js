@@ -20,7 +20,6 @@ function fillModalInfo(movie) {
     setModalTitle(movie);
     setModalPoster(movie);
     setModalOverview(movie);
-    //setModalGenres(movie);
     setModalAvarage(movie);
 }
 
