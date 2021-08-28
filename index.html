@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CubosFlix</title>
-    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="./css/spacing.css">
-    <script src="script.js" defer></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CubosFlix</title>
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="./css/spacing.css">
+  <script src="scripts/carrossel.js" defer></script>
+  <script src="scripts/highlights.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+</head>
 
-  <body class="body">
-    <header class="header flex-row justify-between mgbt-4">
-      <img src="./assets/logo.svg" alt="Logo">
-      <h1 class="header__title">Cubos Flix</h1>
-      <img class="btn-theme" src="./assets/light-mode.svg" alt="Botão de tema">
-    </header>
-    <div class="container flex-column align-center">
-      <input class="input mgbt-4" type="text" placeholder="Pesquisar...">
-      <div class="movies-container flex-row  mgbt-4">
-        <img class="btn-prev" src="./assets/seta-esquerda-preta.svg" alt="Seta esquerda">
-       <div class="movies flex-row justify-center">
-          <!--<div class="movie flex-column justify-end">
+<body class="body">
+  <header class="header flex-row justify-between mgbt-4">
+    <img src="./assets/logo.svg" alt="Logo">
+    <h1 class="header__title">Cubos Flix</h1>
+    <img class="btn-theme" src="./assets/light-mode.svg" alt="Botão de tema">
+  </header>
+  <div class="container flex-column align-center">
+    <input class="input mgbt-4" type="text" placeholder="Pesquisar...">
+    <div class="movies-container flex-row  mgbt-4">
+      <img class="btn-prev" src="./assets/seta-esquerda-preta.svg" alt="Seta esquerda">
+      <div class="movies flex-row justify-center">
+        <!--<div class="movie flex-column justify-end">
             <div class="movie__info flex-row justify-between">
               <span class="movie__title"></span>
               <span class="movie__rating">
@@ -31,41 +33,41 @@
               </span>
             </div>
           </div>-->
-        </div>
-        <img class="btn-next" src="./assets/seta-direita-preta.svg" alt="Seta direita">
       </div>
-      <h2 class="subtitle">Highlight do dia</h2>
-      <div class="highlight flex-row ">
-        <a class="highlight__video-link" href="#" target="_blank">
-          <div class="highlight__video flex-column align-center justify-center">
-            <button class="highlight__video-button"><img src="./assets/play.svg" alt="Play"></button>
-          </div>
-        </a>
-        <div class="highlight__info">
-          <div class="highlight__title-rating flex-row justify-between align-center">
-            <h3 class="highlight__title"></h3>
-            <span class="highlight__rating"></span>
-          </div>
-          <div class="highlight__genre-launch flex-row justify-between align-center">
-            <span class="highlight__genres"></span>
-            <span class="highlight__launch"></span>
-          </div>
-          <p class="highlight__description">
-          </p>
+      <img class="btn-next" src="./assets/seta-direita-preta.svg" alt="Seta direita">
+    </div>
+    <h2 class="subtitle">Highlight do dia</h2>
+    <div class="highlight flex-row ">
+      <a class="highlight__video-link" href="#" target="_blank">
+        <div class="highlight__video flex-column align-center justify-center">
+          <button class="highlight__video-button"><img src="./assets/play.svg" alt="Play"></button>
         </div>
+      </a>
+      <div class="highlight__info">
+        <div class="highlight__title-rating flex-row justify-between align-center">
+          <h3 class="highlight__title"></h3>
+          <span class="highlight__rating"></span>
+        </div>
+        <div class="highlight__genre-launch flex-row justify-between align-center">
+          <span class="highlight__genres"></span>
+          <span class="highlight__launch"></span>
+        </div>
+        <p class="highlight__description">
+        </p>
       </div>
     </div>
-    <div class="modal flex-row align-center">
-      <img src="./assets/close.svg" alt="Close" class="modal__close">
-      <h3 class="modal__title"></h3>
-      <img class="modal__img">
-      <p class="modal__description">
-      </p>
-      <div class="modal__genre-average">
-        <div class="modal__genres"></div>
-        <div class="modal__average"></div>
-      </div>
+  </div>
+  <div class="modal flex-row align-center hidden">
+    <img src="./assets/close.svg" alt="Close" class="modal__close">
+    <h3 class="modal__title"></h3>
+    <img class="modal__img">
+    <p class="modal__description">
+    </p>
+    <div class="modal__genre-average">
+      <div class="modal__genres"></div>
+      <div class="modal__average"></div>
     </div>
-  </body>
+  </div>
+</body>
 
 </html>
