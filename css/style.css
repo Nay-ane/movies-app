@@ -169,7 +169,38 @@
     right: 0;
     bottom: 0;
     left: 0;
+    padding: 80px;
 
+}
+
+.modal__title {
+    width: 357px;
+    height: 54px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FFF;
+    text-align: center;
+}
+
+.modal__img {
+    width: 729px;
+    height: 413px;
+    left: 355px;
+    top: 184px;
+    margin-bottom: 30px;
+}
+
+
+.modal__description {
+    width: 730px;
+    height: 151px;
+    font-size: 20px;
+    color: #FFFF
+}
+
+.modal__average {
+    font-size: 20px;
+    color: #FFFF
 }
 
 .modal__close {

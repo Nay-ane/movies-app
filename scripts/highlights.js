@@ -1,3 +1,4 @@
+
 function init() {
     fetchMovieHighlight();
 }
@@ -13,6 +14,7 @@ async function fetchMovieHighlight() {
     setRating(movie)
     setReleaseDate(movie)
     setOverview(movie)
+    setGenres(movie)
     addOnClickListener(movie)
 }
 
